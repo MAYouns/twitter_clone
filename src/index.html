@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter_ clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <style>
+        body {
+            font-size: 0.75rem;
+        }
+
+        .sc {
+            overflow-y: scroll;
+            scrollbar-width: thin;
+            scrollbar-color: #203040 transparent;
+        }
+    </style>
+</head>
+
+<body class=" font-bold dark:bg-[#15202b] dark:text-white">
+
+    <div class="container h-full m-auto flex relative lg-w-8/12">
+        <div class="md:w-2/12 hidden md:block fixed top-0 bottom-0 md:static px-3 pl-1 bg-white dark:bg-[#15202b]"
+            id="nav">
+            <button id="close" class="md:hidden absolute right-0"><i class="fa-solid fa-circle-xmark"></i></button>
+            <div>
+                <i class="fa-brands fa-twitter text-3xl"></i>
+                <ul class="flex-col space-y-5 py-5">
+                    <li class="flex space-x-2"><i class="fa-solid fa-house text-xs"></i><span>Home</span></li>
+                    <li class="flex space-x-2"><i class="fa-solid fa-hashtag text-xs"></i><span>Explore</span></li>
+                    <li class="flex space-x-2"><i class="fa-solid fa-bell text-xs"></i><span>Notifications</span>
+                    </li>
+                    <li class="flex space-x-2"><i class="fa-solid fa-envelope text-xs"></i><span>Messeges</span>
+                    </li>
+                    <li class="flex space-x-2"><i class="fa-solid fa-bookmark text-xs"></i><span>Bookmarks</span>
+                    </li>
+                    <li class="flex space-x-2"><i class="fa-solid fa-list text-xs"></i><span>Lists</span></li>
+                    <li class="flex space-x-2"><i class="fa-solid fa-user text-xs"></i><span>Profile</span></li>
+                    <li class="flex space-x-2 m"><i class="fa-solid fa-ellipsis text-xs"></i><span>more</span></li>
+                </ul>
+                <button class="w-full bg-blue-500 rounded-xl py-2">Tweet</button>
+            </div>
+            <div class="md:flex flex-wrap justify-between mt-14 hidden">
+                <img src="../assets/myPic.jpg" alt="Mostafa_Youns" class="w-[3rem] h-[3rem] rounded-full">
+                <div class="">
+                    <h5>Mostafa_Youns</h5>
+                    <p>Lorem_ipsum_dolor</p>
+                </div>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="w-full md:w-7/12 md:overflow-y-scroll md- md:h-screen sc border border-gray-700">
+            <header class="flex justify-between  border-b border-gray-700 p-3">
+                <div class="hidden md:block">Home</div>
+                <div class="md:hidden">
+                    <button id="navButton"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                <i class="fa-brands fa-twitter text-blue-500" id="darkBtn"></i>
+            </header>
+            <section class="  border-b border-gray-700 p-3">
+                <div class="flex">
+                    <img src="../assets/myPic.jpg" alt="Mostafa_Youns" class="w-[3rem] h-[3rem] rounded-full">
+                    <textarea name="" id="" placeholder="What's happining?"
+                        class="ml-4 w-full h-20 focus:outline-none bg-transparent "></textarea>
+                </div>
+                <div class="flex justify-between mt-2 ">
+                    <div class="text-blue-500">
+                        <i class="fa-solid fa-image"></i>
+                        <i class="fa-solid fa-file-lines"></i>
+                        <i class="fa-solid fa-face-smile"></i>
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <button class="rounded-lg bg-blue-500 text-white px-4 py-1">Tweet</button>
+                </div>
+            </section>
+            <p class=" border-b border-gray-700 p-3 text-center text-blue-500">
+                <button>Show 9 Tweets</button>
+            </p>
+            <div class="border-b border-gray-700 p-3">
+                <div class="flex">
+                    <img src="../assets/myPic.jpg" alt="Mostafa_Youns" class="w-[3rem] h-[3rem] rounded-full">
+                    <p class="p-3">
+                        Mostafa_Youns
+                        <span class="text-gray-400">@MAYounsgmail .Nov 2</span>
+                    </p>
+                </div>
+                <div class="ps-16 space-y-3">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ex voluptas, dolorem dolore vero
+                        sint sapiente quisquam alias, molestias labore commodi!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <a href="#" class="text-blue-500">#mistakes</a>
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <img src="../assets/smile.jpg" alt="smile" class="rounded-lg w-10/12 m-auto">
+                    <div class="flex justify-between ">
+                        <div>
+                            <i class="fa-solid fa-comment"></i>
+                            <span>12.3k</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-retweet"></i>
+                            <span>14k</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>14k</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-b border-gray-700 p-3 text-center">
+                <h1 class="text-3xl">Customize your view</h1>
+                <p class="text-gray-400 px-8 py-4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sapiente ipsa quas, eos inventore
+                    quos aperiam quod nihil cumque rerum quo odio ut fugiat atque dolor laboriosam adipisci esse magnam.
+                </p>
+                <div class="loading text-2xl text-center ">
+                    <i class="fa-solid fa-spinner animate-spin"></i>
+                </div>
+            </div>
+        </div>
+        <div class="w-3/12 hidden md:block">
+            <div class="relative">
+                <i class="fas fa-search search-icon text-lg absolute left-3 top-3 text-gray-700"></i>
+                <input type="search" placeholder="Search Twitter"
+                    class="font-thin dark:bg-[#202e3e] border rounded-xl w-full pl-8 py-2 m-2">
+            </div>
+            <div class="rounded-l w-full p-2 m-2 dark:bg-[#202e3e]">
+                <p class="py-2 border-b border-gray-700">What's happining</p>
+                <p class="flex flex-col py-2 border-b border-gray-700">
+                    <a href="#">#palastine</a>
+                    <span class="text-gray-500">29.7k Tweets</span>
+                </p>
+                <p class="flex flex-col py-2 border-b border-gray-700">
+                    <a href="#">#palastine</a>
+                    <span class="text-gray-500">29.7k Tweets</span>
+                </p>
+                <p class="flex flex-col py-2 border-b border-gray-700">
+                    <a href="#">#palastine</a>
+                    <span class="text-gray-500">29.7k Tweets</span>
+                </p>
+                <button class="text-blue-500 py-2">Show more</button>
+            </div>
+            <div class="rounded-l w-full p-2 m-2 dark:bg-[#202e3e]">
+                <p class="py-2 border-b border-gray-700">Who to follow</p>
+                <div class="py-2 border-b border-gray-700 flex justify-between">
+                    <div class="flex flex-wrap">
+                        <img src="../assets/myPic.jpg" alt="Mostafa_Youns" class="w-[3rem] h-[3rem] rounded-full">
+                        <p>
+                            Mostafa_Youns<br>
+                            <span class="text-gray-500">@MAYounsgmail</span>
+                        </p>
+                    </div>
+                    <button class="border border-blue-500 text-blue-500 px-3 h-3/4 translate-y-7 ">Follow</button>
+                </div>
+                <button class="text-blue-500 py-2">Show more</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('navButton').addEventListener('click', function () {
+            document.getElementById('nav').classList.remove('hidden');
+        })
+        document.getElementById('close').addEventListener('click', function () {
+            document.getElementById('nav').classList.add('hidden');
+        })
+        document.getElementById('darkBtn').addEventListener('click', function () {
+            document.querySelector('html').classList.toggle('dark');
+        })
+    </script>
+</body>
+
+</html>
